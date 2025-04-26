@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <div class="container">
+        <!-- Logo and Main Nav -->
+        <div class="header-main">
+          <a href="#" class="logo">
+            <span class="logo-text">CoinMarketCap</span>
+          </a>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Cryptocurrencies</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">DexScan</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Exchanges</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Community</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Products</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Portfolio</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="nav-link">Watchlist</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Search and Login -->
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Search" class="search-input" />
+            <button class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+          <button class="login-btn">LOGIN</button>
+
+          <button
+            class="nav-toggle-btn"
+            aria-label="Toggle menu"
+            data-nav-toggler
+          >
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Market Stats Bar -->
+      <div class="market-stats">
+        <div class="container">
+          <ul class="stats-list">
+            <li class="stat-item">Cryptos: <span id="m1">14.4M</span></li>
+            <li class="stat-item">Exchanges: <span id="m1">808</span></li>
+            <li class="stat-item">
+              Market Cap: <span id="m1">$2,967</span>
+              <span class="change positive">~ 0.41%</span>
+            </li>
+            <li class="stat-item">
+              24h Vol: <span id="m1">$98,838</span>
+              <span class="change positive">~ 25.45%</span>
+            </li>
+            <li class="stat-item">
+              Dominance: <span id="m1">BTC: 63.3% ETH: 7.4%</span>
+            </li>
+            <li class="stat-item">ETH Gas: <span id="m1">0.45 Gwei</span></li>
+            <li class="stat-item">Fear & Greed: <span id="m1">53/100</span></li>
+            <li class="stat-item">
+              <a href="#" class="get-listed">Get listed</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <main>
+      <article>
+        <!-- Crypto Market Section -->
+        <section class="crypto-market-section">
+          <div class="market-header">
+            <h2>Today's Cryptocurrency Prices by Market Cap</h2>
+            <p>
+              The global crypto market cap is $2.95T, a ~ 0.41% decrease over
+              the last day. <a href="#">Read More</a>
+            </p>
+          </div>
+
+          <div class="market-grid">
+            <!-- Trending Coins Card -->
+            <div class="market-card">
+              <h3>Trending Coins</h3>
+              <ul class="trending-list">
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">BONK</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$0.00001887</span>
+                    <span class="coin-change negative">-16.48%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">TRUMP</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$15.31</span>
+                    <span class="coin-change negative">-8.82%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">VIRTUAL</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$1.07</span>
+                    <span class="coin-change negative">-13.06%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">LetsBONK</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$0.2059</span>
+                    <span class="coin-change negative">-1.89%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">WLD</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$1.11</span>
+                    <span class="coin-change negative">-12.10%</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Trending on DexScan Card -->
+            <div class="market-card">
+              <h3>Trending on DexScan</h3>
+              <ul class="trending-list">
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">TRUMP/USDC</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$15.29</span>
+                    <span class="coin-change negative">-7.56%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">LetsBONK/SOL</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$0.18</span>
+                    <span class="coin-change negative">-9999%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">Fartcoin/SOL</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$1.02</span>
+                    <span class="coin-change negative">-7.73%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">POPCAT/SOL</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$0.3984</span>
+                    <span class="coin-change negative">-5.68%</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="coin-info">
+                    <span class="coin-name">House/SOL</span>
+                  </div>
+                  <div class="coin-values">
+                    <span class="coin-price">$0.04279</span>
+                    <span class="coin-change negative">-28.2%</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Market Cap Card -->
+            <div class="market-card">
+              <h3>Market Overview</h3>
+              <div class="metric-grid">
+                <!-- Market Cap Box -->
+                <div class="metric-box">
+                  <div class="metric-name">Market Cap</div>
+                  <div class="metric-value">$2.95T</div>
+                  <div class="metric-change positive">+0.83%</div>
+                </div>
+
+                <!-- CMC100 Box -->
+                <div class="metric-box">
+                  <div class="metric-name">CMC100</div>
+                  <div class="metric-value">$180.73</div>
+                  <div class="metric-change positive">+0.32%</div>
+                </div>
+
+                <!-- Fear & Greed Box -->
+                <div class="metric-box">
+                  <div class="metric-name">Fear & Greed</div>
+                  <div class="metric-value">53</div>
+                  <div class="metric-status">Neutral</div>
+                </div>
+
+                <!-- Altcoin Season Box -->
+                <div class="metric-box">
+                  <div class="metric-name">Altcoin Season</div>
+                  <div class="metric-value">13/100</div>
+                  <div class="metric-tags">
+                    <span class="tag">Bitcoin</span>
+                    <span class="tag">Altcoin</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- market section -->
+
+        <section class="section market" aria-label="market update" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Market Update</h2>
+
+              <a href="#" class="btn-link">See All Coins</a>
+            </div>
+
+            <div class="market-tab">
+              <ul class="tab-nav">
+                <li>
+                  <button class="tab-btn active">All Crypto</button>
+                </li>
+                <li>
+                  <button class="tab-btn">NFTs</button>
+                </li>
+                <li>
+                  <button class="tab-btn">Categories</button>
+                </li>
+                <li>
+                  <button class="tab-btn">Token unlocks</button>
+                </li>
+                <li>
+                  <button class="tab-btn">♻️ Rehypo</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 Binance Alpha</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 Memes</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 SOL</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 BNB</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 USA</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 AI</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 RWA</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 Gaming</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 DePIN</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 DeFAI</button>
+                </li>
+                <li>
+                  <button class="tab-btn">🔥 RWA</button>
+                </li>
+              </ul>
+
+              <table class="market-table">
+                <thead class="table-head">
+                  <tr class="table-row table-title">
+                    <th class="table-heading"></th>
+
+                    <th class="table-heading" scope="col">#</th>
+
+                    <th class="table-heading" scope="col">Name</th>
+
+                    <th class="table-heading" scope="col">Last Price</th>
+
+                    <th class="table-heading" scope="col">24h %</th>
+
+                    <th class="table-heading" scope="col">Market Cap</th>
+
+                    <th class="table-heading" scope="col">Last 7 Days</th>
+
+                    <th class="table-heading"></th>
+                  </tr>
+                </thead>
+
+                <tbody class="table-body">
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">1</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-1.svg"
+                          width="20"
+                          height="20"
+                          alt="Bitcoin logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Bitcoin <span class="span">BTC</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update green">+1.45%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-1.svg"
+                        width="100"
+                        height="40"
+                        alt="profit chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">2</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-2.svg"
+                          width="20"
+                          height="20"
+                          alt="Ethereum logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Ethereum <span class="span">ETH</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update red">-5.12%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">3</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-3.svg"
+                          width="20"
+                          height="20"
+                          alt="Tether logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Tether <span class="span">USDT/USD</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update green">+1.45%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-1.svg"
+                        width="100"
+                        height="40"
+                        alt="profit chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">4</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-4.svg"
+                          width="20"
+                          height="20"
+                          alt="BNB logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >BNB <span class="span">BNB/USD</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update red">-3.75%%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">5</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-5.svg"
+                          width="20"
+                          height="20"
+                          alt="Solana logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Solana <span class="span">SOL</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update green">+1.45%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-1.svg"
+                        width="100"
+                        height="40"
+                        alt="profit chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">6</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-6.svg"
+                          width="20"
+                          height="20"
+                          alt="XRP logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >XRP <span class="span">XRP</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update red">-2.22%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">7</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-7.svg"
+                          width="20"
+                          height="20"
+                          alt="Cardano logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Cardano <span class="span">ADA</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update green">+0.8%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-1.svg"
+                        width="100"
+                        height="40"
+                        alt="profit chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+
+                    <th class="table-data rank" scope="row">8</th>
+
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-8.svg"
+                          width="20"
+                          height="20"
+                          alt="Avalanche logo"
+                          class="img"
+                        />
+
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Avalanche <span class="span">AVAX</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+
+                    <td class="table-data last-price">$56,623.54</td>
+
+                    <td class="table-data last-update green">+1.41%</td>
+
+                    <td class="table-data market-cap">$880,423,640,582</td>
+
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-1.svg"
+                        width="100"
+                        height="40"
+                        alt="profit chart"
+                        class="chart"
+                      />
+                    </td>
+
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <!-- Row 9 - Sui (SUI) -->
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+                    <th class="table-data rank" scope="row">9</th>
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-9.png"
+                          width="20"
+                          height="20"
+                          alt="Sui logo"
+                          class="img"
+                        />
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Sui <span class="span">SUI</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+                    <td class="table-data last-price">$3.47</td>
+                    <td class="table-data last-update red">-0.20%</td>
+                    <td class="table-data market-cap">$11,294,781,989</td>
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <!-- Row 10 - Chainlink (LINK) -->
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+                    <th class="table-data rank" scope="row">10</th>
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-10.png"
+                          width="20"
+                          height="20"
+                          alt="Chainlink logo"
+                          class="img"
+                        />
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Chainlink <span class="span">LINK</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+                    <td class="table-data last-price">$14.87</td>
+                    <td class="table-data last-update red">-0.18%</td>
+                    <td class="table-data market-cap">$9,775,071,447</td>
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <!-- Row 11 - Avalanche (AVAX) -->
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+                    <th class="table-data rank" scope="row">11</th>
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-8.svg"
+                          width="20"
+                          height="20"
+                          alt="Avalanche logo"
+                          class="img"
+                        />
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Avalanche <span class="span">AVAX</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+                    <td class="table-data last-price">$22.12</td>
+                    <td class="table-data last-update red">-0.39%</td>
+                    <td class="table-data market-cap">$9,206,100,813</td>
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <!-- Row 12 - Stellar (XLM) -->
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+                    <th class="table-data rank" scope="row">12</th>
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-12.jpeg"
+                          width="20"
+                          height="20"
+                          alt="Stellar logo"
+                          class="img"
+                        />
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Stellar <span class="span">XLM</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+                    <td class="table-data last-price">$0.2910</td>
+                    <td class="table-data last-update red">-0.03%</td>
+                    <td class="table-data market-cap">$8,981,520,147</td>
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <!-- Row 13 - UNUS SED LEO (LEO) -->
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+                    <th class="table-data rank" scope="row">13</th>
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-13.png"
+                          width="20"
+                          height="20"
+                          alt="LEO logo"
+                          class="img"
+                        />
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >UNUS SED LEO <span class="span">LEO</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+                    <td class="table-data last-price">$9.08</td>
+                    <td class="table-data last-update red">-0.04%</td>
+                    <td class="table-data market-cap">$8,388,879,942</td>
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+
+                  <!-- Row 14 - Shiba Inu (SHIB) -->
+                  <tr class="table-row">
+                    <td class="table-data">
+                      <button
+                        class="add-to-fav"
+                        aria-label="Add to favourite"
+                        data-add-to-fav
+                      >
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                          class="icon-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          name="star"
+                          aria-hidden="true"
+                          class="icon-fill"
+                        ></ion-icon>
+                      </button>
+                    </td>
+                    <th class="table-data rank" scope="row">14</th>
+                    <td class="table-data">
+                      <div class="wrapper">
+                        <img
+                          src="./assets/images/coin-14.png"
+                          width="20"
+                          height="20"
+                          alt="Shiba Inu logo"
+                          class="img"
+                        />
+                        <h3>
+                          <a href="#" class="coin-name"
+                            >Shiba Inu <span class="span">SHIB</span></a
+                          >
+                        </h3>
+                      </div>
+                    </td>
+                    <td class="table-data last-price">$0.00001413</td>
+                    <td class="table-data last-update red">-0.26%</td>
+                    <td class="table-data market-cap">$8,326,803,178</td>
+                    <td class="table-data">
+                      <img
+                        src="./assets/images/chart-2.svg"
+                        width="100"
+                        height="40"
+                        alt="loss chart"
+                        class="chart"
+                      />
+                    </td>
+                    <td class="table-data">
+                      <button class="btn btn-outline">Trade</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Add this section after your market table section -->
+        <section class="email-subscription">
+          <div class="container">
+            <div class="subscription-grid">
+              <div class="subscription-content">
+                <h2 class="subscription-title">
+                  Stay on top of crypto. All the time, any time.
+                </h2>
+                <p class="subscription-text">
+                  Please keep me updated by email with the latest crypto news,
+                  research findings, reward programs, event updates, coin
+                  listings and more information from CoinMarketCap.
+                </p>
+
+                <form class="subscription-form">
+                  <input
+                    type="email"
+                    placeholder="Enter your e-mail address"
+                    class="email-input"
+                    required
+                  />
+                  <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+              </div>
+
+              <div class="subscription-image">
+                <img
+                  src="./assets/images/newsletter.svg"
+                  alt="Crypto newsletter illustration"
+                  class="newsletter-img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="main-footer">
+          <div class="container">
+            <div class="footer-grid">
+              <!-- Products Column -->
+              <div class="footer-column">
+                <h3 class="footer-heading">Products</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Academy</a></li>
+                  <li><a href="#">Advertise</a></li>
+                  <li><a href="#">CMC Labs</a></li>
+                  <li><a href="#">Bitcoin ETFs</a></li>
+                  <li><a href="#">Crypto API</a></li>
+                  <li><a href="#">DevScan</a></li>
+                  <li><a href="#">Global Charts</a></li>
+                  <li><a href="#">NFT</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Watchlist</a></li>
+                  <li><a href="#">Doodles</a></li>
+                  <li><a href="#">Stemap</a></li>
+                </ul>
+              </div>
+
+              <!-- Company Column -->
+              <div class="footer-column">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Cookie preferences</a></li>
+                  <li><a href="#">Cookie policy</a></li>
+                  <li><a href="#">Community Rules</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+                  <li><a href="#">Methodology</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+
+              <!-- Support Column -->
+              <div class="footer-column">
+                <h3 class="footer-heading">Support</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Get Listed</a></li>
+                  <li><a href="#">Request Form</a></li>
+                  <li><a href="#">Contact Support</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Glossary</a></li>
+                </ul>
+              </div>
+
+              <!-- Socials Column -->
+              <div class="footer-column">
+                <h3 class="footer-heading">Socials</h3>
+                <ul class="footer-links">
+                  <li><a href="#">X (Twitter)</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Telegram</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Reddit</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+              <p class="copyright">© 2025 CoinMarketCap. All rights reserved</p>
+            </div>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
