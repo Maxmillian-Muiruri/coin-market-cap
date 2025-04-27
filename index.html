@@ -11,19 +11,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/crypto-dashboard.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- HEADER SECTION -->
     <header class="header">
       <div class="container">
-        <!-- Logo and Main Nav -->
+        <!-- Logo and Main Navigation -->
         <div class="header-main">
           <a href="#" class="logo">
             <span class="logo-text">CoinMarketCap</span>
           </a>
 
-          <nav class="navbar">
+          <nav class="navbar" aria-label="Primary navigation">
             <ul class="navbar-list">
               <li class="navbar-item">
                 <a href="#" class="nav-link">Cryptocurrencies</a>
@@ -50,16 +51,17 @@
           </nav>
         </div>
 
-        <!-- Search and Login -->
+        <!-- Search box and Login button -->
         <div class="header-actions">
-          <div class="search-box">
+          <div class="search-box" role="search" aria-label="Site search">
             <input type="text" placeholder="Search" class="search-input" />
-            <button class="search-btn">
+            <button class="search-btn" aria-label="Search">
               <ion-icon name="search-outline"></ion-icon>
             </button>
           </div>
-          <button class="login-btn">LOGIN</button>
+          <button class="login-btn" aria-label="Login">LOGIN</button>
 
+          <!-- Mobile menu toggle button -->
           <button
             class="nav-toggle-btn"
             aria-label="Toggle menu"
@@ -103,155 +105,108 @@
     <main>
       <article>
         <!-- Crypto Market Section -->
-        <section class="crypto-market-section">
-          <div class="market-header">
+        <section class="crypto-dashboard">
+          <div class="dashboard-header">
             <h2>Today's Cryptocurrency Prices by Market Cap</h2>
             <p>
-              The global crypto market cap is $2.95T, a ~ 0.41% decrease over
-              the last day. <a href="#">Read More</a>
+              The global crypto market cap is <strong>$2.95T</strong>, a
+              <span class="decrease">0.44%</span> decrease over the last day.
             </p>
           </div>
 
-          <div class="market-grid">
-            <!-- Trending Coins Card -->
-            <div class="market-card">
+          <div class="dashboard-grid">
+            <!-- Trending Coins -->
+            <div class="card trending-coins">
               <h3>Trending Coins</h3>
-              <ul class="trending-list">
+              <ul>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">BONK</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$0.00001887</span>
-                    <span class="coin-change negative">-16.48%</span>
-                  </div>
+                  <span>1. JST</span> <strong>$0.04087</strong>
+                  <span class="up">▲ 27.93%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">TRUMP</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$15.31</span>
-                    <span class="coin-change negative">-8.82%</span>
-                  </div>
+                  <span>2. ACH</span> <strong>$0.02811</strong>
+                  <span class="up">▲ 1.88%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">VIRTUAL</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$1.07</span>
-                    <span class="coin-change negative">-13.06%</span>
-                  </div>
+                  <span>3. ZBCN</span> <strong>$0.001088</strong>
+                  <span class="up">▲ 13.07%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">LetsBONK</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$0.2059</span>
-                    <span class="coin-change negative">-1.89%</span>
-                  </div>
+                  <span>4. ARPA</span> <strong>$0.02798</strong>
+                  <span class="up">▲ 5.93%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">WLD</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$1.11</span>
-                    <span class="coin-change negative">-12.10%</span>
-                  </div>
+                  <span>5. PUMPAI</span> <strong>$0.000524</strong>
+                  <span class="up">▲ 186.58%</span>
                 </li>
               </ul>
             </div>
 
-            <!-- Trending on DexScan Card -->
-            <div class="market-card">
+            <!-- Trending on DexScan -->
+            <div class="card trending-dexscan">
               <h3>Trending on DexScan</h3>
-              <ul class="trending-list">
+              <ul>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">TRUMP/USDC</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$15.29</span>
-                    <span class="coin-change negative">-7.56%</span>
-                  </div>
+                  <span>1. TRUMP/USDC</span> <strong>$14.86</strong>
+                  <span class="down">▼ 3.57%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">LetsBONK/SOL</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$0.18</span>
-                    <span class="coin-change negative">-9999%</span>
-                  </div>
+                  <span>2. Fartcoin/SOL</span> <strong>$1.03</strong>
+                  <span class="up">▲ 3.44%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">Fartcoin/SOL</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$1.02</span>
-                    <span class="coin-change negative">-7.73%</span>
-                  </div>
+                  <span>3. POPCAT/SOL</span> <strong>$0.388</strong>
+                  <span class="down">▼ 2.63%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">POPCAT/SOL</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$0.3984</span>
-                    <span class="coin-change negative">-5.68%</span>
-                  </div>
+                  <span>4. House/SOL</span> <strong>$0.07334</strong>
+                  <span class="up">▲ 35.79%</span>
                 </li>
                 <li>
-                  <div class="coin-info">
-                    <span class="coin-name">House/SOL</span>
-                  </div>
-                  <div class="coin-values">
-                    <span class="coin-price">$0.04279</span>
-                    <span class="coin-change negative">-28.2%</span>
-                  </div>
+                  <span>5. LetsBONK/SOL</span> <strong>$0.1741</strong>
+                  <span class="down">▼ 27.32%</span>
                 </li>
               </ul>
             </div>
 
-            <!-- Market Cap Card -->
-            <div class="market-card">
-              <h3>Market Overview</h3>
-              <div class="metric-grid">
-                <!-- Market Cap Box -->
-                <div class="metric-box">
-                  <div class="metric-name">Market Cap</div>
-                  <div class="metric-value">$2.95T</div>
-                  <div class="metric-change positive">+0.83%</div>
-                </div>
+            <!-- Market Cap -->
+            <div class="card market-cap">
+              <h3>Market Cap</h3>
+              <p class="price">$2.95T</p>
+              <p class="decrease">▼ 0.44%</p>
+            </div>
 
-                <!-- CMC100 Box -->
-                <div class="metric-box">
-                  <div class="metric-name">CMC100</div>
-                  <div class="metric-value">$180.73</div>
-                  <div class="metric-change positive">+0.32%</div>
-                </div>
+            <!-- CMC100 -->
+            <div class="card cmc100">
+              <h3>CMC100</h3>
+              <p class="price">$180.14</p>
+              <p class="decrease">▼ 0.49%</p>
+            </div>
 
-                <!-- Fear & Greed Box -->
-                <div class="metric-box">
-                  <div class="metric-name">Fear & Greed</div>
-                  <div class="metric-value">53</div>
-                  <div class="metric-status">Neutral</div>
-                </div>
+            <!-- Fear & Greed -->
+            <div class="card fear-greed">
+              <h3>Fear & Greed</h3>
+              <div class="score">53 <span>Neutral</span></div>
+            </div>
 
-                <!-- Altcoin Season Box -->
-                <div class="metric-box">
-                  <div class="metric-name">Altcoin Season</div>
-                  <div class="metric-value">13/100</div>
-                  <div class="metric-tags">
-                    <span class="tag">Bitcoin</span>
-                    <span class="tag">Altcoin</span>
-                  </div>
-                </div>
-              </div>
+            <!-- Altcoin Season -->
+            <div class="card altcoin-season">
+              <h3>Altcoin Season</h3>
+              <div class="score">15/100</div>
+            </div>
+
+            <!-- News Cards -->
+            <div class="card news">
+              <h4>Coin Edition • Apr 26</h4>
+              <p>
+                ⚡ UPDATE: BRBrazil Sees Launch of XRPH11 as Hashdex Introduces
+                World's...
+              </p>
+            </div>
+
+            <div class="card news">
+              <h4>Cryptocurrency Press • Apr 26</h4>
+              <p>Record $3 Billion Inflows to Bitcoin ETFs</p>
             </div>
           </div>
         </section>
@@ -882,7 +837,7 @@
                     </td>
                   </tr>
 
-                  <!-- Row 10 - Chainlink (LINK) -->
+                  <!-- Row 10 - Chainlink  -->
                   <tr class="table-row">
                     <td class="table-data">
                       <button
@@ -936,7 +891,7 @@
                     </td>
                   </tr>
 
-                  <!-- Row 11 - Avalanche (AVAX) -->
+                  <!-- Row 11 - Avalanche  -->
                   <tr class="table-row">
                     <td class="table-data">
                       <button
@@ -990,7 +945,7 @@
                     </td>
                   </tr>
 
-                  <!-- Row 12 - Stellar (XLM) -->
+                  <!-- Row 12 - Stellar  -->
                   <tr class="table-row">
                     <td class="table-data">
                       <button
@@ -1044,7 +999,7 @@
                     </td>
                   </tr>
 
-                  <!-- Row 13 - UNUS SED LEO (LEO) -->
+                  <!-- Row 13 - UNUS SED LEO  -->
                   <tr class="table-row">
                     <td class="table-data">
                       <button
@@ -1098,7 +1053,7 @@
                     </td>
                   </tr>
 
-                  <!-- Row 14 - Shiba Inu (SHIB) -->
+                  <!-- Row 14 - Shiba Inu  -->
                   <tr class="table-row">
                     <td class="table-data">
                       <button
@@ -1157,7 +1112,6 @@
           </div>
         </section>
 
-        <!-- Add this section after your market table section -->
         <section class="email-subscription">
           <div class="container">
             <div class="subscription-grid">
